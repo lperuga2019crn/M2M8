@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Formulari</title>
+    <link rel="stylesheet" type="text/css" href="form.css"/>
+  </head>
+  <body>
+
+    <form>
+    <h1>Formulari</h1>
+      <div>
+        <label>Nom:</label>
+      <input type="text" name="nom">
+      </div>
+      <div>
+        <label>Cognoms:</label>
+      <input type="text" name="cognom">
+      </div>
+      <div>
+        <label>Email:</label>
+      <input type="email" name="email">
+      </div>
+      <div>
+        <label>Password:</label>
+      <input type="password" name="password">
+      </div>
+      <div>
+        <label>Web</label>
+      <input type="url" name="web">
+      </div>
+      <div>
+        <label>Adreça:</label>
+      <input type="text" name="adress">
+      </div>
+      <div>
+        <label>Telefon:</label>
+      <input type="tel" name="telefon">
+      </div>
+      <div>
+        <label>Edat</label>
+      <input type="number" name="edat">
+      </div>
+      <div>
+        <label>Data de naixement:</label>
+      <input type="date" name="born">
+      </div>
+      <div id="gènere">
+        <label>Gènere:</label>
+      <input type="radio" name="born" value="femení" class="alinea">Femení</br>
+      <input type="radio" name="born" value="masculí" class="alinea">Masculí</br>
+      <input type="radio" name="born" value="altres" class="alinea">Altres</br>
+      </div>
+      <div>
+        <label>Població:</label>
+      <select name="població"></br>
+        <option value="Cornellà">Cornellà</br>
+        <option value="Hospitalet">Hospitalet</br>
+        <option value="Viladecans">Viladecans</br>
+        <option value="Sant Boi">Sant Boi</br>
+        <option value="Esplugues">Esplugues</br>
+        <option value="Olesa">Olesa</br>
+
+      </select>
+      </div>
+      <div>
+        <label>Estuis:</label>
+      <input type="checkbox" name="estudis" value="ESO" class="alinea">ESO</br>
+      <input type="checkbox" name="estudis" value="BTX" class="alinea">Batxillerat</br>
+      <input type="checkbox" name="estudis" value="GM" class="alinea">Grau Mitjà</br>
+      <input type="checkbox" name="estudis" value="GS" class="alinea">Grau Superior</br>
+    </div>
+    <div>
+      <label>Comentaris</label>
+      <textarea cols="40" rows="10" name="comentaris">
+      </textarea>
+    </div>
+    <div>
+      <input type="submit" id="envia">
+    </div>
+
+
+    </form>
+  </body>
+</html>
