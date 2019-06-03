@@ -1,0 +1,194 @@
+body{
+  margin:0;
+  padding:0;
+
+}
+
+div{
+  overflow: visible;
+  position: relative;
+
+}
+
+.esquerra{
+  float: left;
+  clear: left;
+}
+
+.dreta{
+  float: right;
+  clear: right;
+}
+
+.cap{
+  width: 500px;
+  height: 800px;
+  background-color: gold;
+  background: linear-gradient(to left,#ffbd07,gold);
+  margin: 0 auto;
+  border-radius: 100px 100px 270px 270px;
+}
+
+.pel{
+  height: 200px;
+  background-color: chocolate;
+  border-radius: 85px 85px 0 0;
+  background: linear-gradient(to left, chocolate, #ff8c1a);
+}
+
+.ulls{
+  height: 180px;
+  background-color: ;
+  clear: both;
+}
+
+.celles{
+  height: 20px;
+  background-color: ;
+}
+
+.cella{
+  width: 190px;
+  height: 20px;
+  background-color: chocolate;
+  margin: 0 25px;
+  top: 10px;
+  border-radius: 100px;
+}
+
+.parpelles{
+  height: 60px;
+  background-color: ;
+  margin: 0;
+}
+
+.parpella{
+  width: 80px;
+  height: 40px;
+  background-color: white;
+  margin: 0 75px;
+  border-radius: 100px;
+  border-top: solid orange 20px;
+  border-bottom: solid orange 20px;
+  top: 20px;
+}
+
+.pestanyes{
+  height: 100px;
+  background-color: ;
+  margin: 0 75px;
+}
+
+.pestanya{
+  height: 40px;
+  width: 80px;
+  background-color: ;
+  margin: 0;
+  top: -65px;
+  border-top: solid black 5px;
+  border-bottom: solid black 5px;
+  border-radius: 35px;
+  top: -45px;
+}
+
+.irisos{
+  height: 50px;
+  background-color: ;
+  margin: 0 75px;
+}
+
+.iris{
+height: 30px;
+width: 30px;
+background-color: yellowgreen;
+background: linear-gradient(palegreen, olivedrab);
+border-radius: 100px;
+margin: 0 25px;
+top: -115px;
+}
+
+.pupilas{
+  height: 50px;
+  background-color: ;
+}
+
+.pupila{
+height: 15px;
+width: 15px;
+background-color: black;
+border-radius: 100px;
+margin: 0 108px;
+top: -157px;
+}
+
+.orelles{
+  height: 80px;
+  background-color: ;
+  margin: 0 80px;
+}
+
+.orella{
+  width: 50px;
+  height: 100px;
+  background-color: orange;
+  margin: -130px;
+  border-radius: 60px;
+}
+
+.nass{
+  height: 30px;
+  width: 65px;
+  background-color: orange;
+  margin: 0 215px;
+  top: -50px;
+  border-radius: 50px 50px 0 0;
+  border-top: solid darkorange 5px;
+}
+
+.nas{
+width: 8px;
+height: 8px;
+background-color: darkorange;
+border-radius: 50px;
+top: 15px;
+margin: 0 10px;
+}
+
+.bocaa{
+  height: 50px;
+  width: 120px;
+  background-color: coral;
+  background: linear-gradient(to top,coral,orangered);
+  margin: 0 185px;
+  top: 80px;
+  border-radius: 0 0 50px 50px;
+  border-top: solid  14px white;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+  animation-direction: alternate;
+}
+@keyframes move{
+  0%{
+    top: 0;
+    left: 0;
+  }
+  25%{
+    top: 30px;
+    left: 0;
+  }
+  50%{
+    top: 20px;
+    left: 0px;
+  }
+  75%{
+    top: 15px;
+    left: 0;
+  }
+  100%{
+    top: 10px;
+    left: 0;
+  }
+}

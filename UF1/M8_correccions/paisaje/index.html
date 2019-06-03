@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ei=edge">
+    <title>Document</title>
+<style media="screen">
+
+body{
+  background-color: lightskyblue;
+  height: 1780px;
+}
+
+.lluna{
+  width: 200px;
+  height:200px;
+  background-color: ;
+  border-radius: 100px;
+  box-shadow: inset 50px 0 0 grey;
+  margin:150px 20px;
+  top: -170px;
+  animation-name: lluna;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+@keyframes lluna {
+
+  0%{
+top: 0;
+left: 0;
+  }
+  50%{
+top: 0;
+left: 1400px;
+transform: scale(1) rotate(180deg);
+  }
+  100%{
+  top: 0;
+  left: 2000px;
+  transform: scale(0) rotate(-180deg);
+  }
+
+}
+
+#nuvol{
+width: 250px;
+height: 150px;
+background-color: #FFF;
+border-radius: 100%;
+position:relative;
+left: 150px;
+animation-name: nuvol;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-delay: 1s;
+animation-iteration-count: 5;
+animation-direction: alternate;
+}
+#nuvol::after{
+  content: "";
+  background-color: #FFF;
+  padding: 50px 70px;
+  border-radius: 100%;
+  position: relative;
+  left: 130px;
+  top: -10px;
+}
+#nuvol::before{
+  content: "";
+  background-color: #FFF;
+  padding: 50px 70px;
+  border-radius: 100%;
+  position: relative;
+  left: -20px;
+  top: 50px;
+}
+#nuvol2{
+width: 350px;
+height: 200px;
+background-color: #FFF;
+border-radius: 100%;
+position:relative;
+left: 1400px;
+top: -250px;
+animation-name: nuvol2;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-delay: 1s;
+animation-iteration-count: 5;
+animation-direction: alternate;
+}
+#nuvol2::after{
+  content: "";
+  background-color: #FFF;
+  padding: 60px 70px;
+  border-radius: 100%;
+  position: relative;
+  left: 100px;
+  top: 60px;
+}
+#nuvol2::before{
+  content: "";
+  background-color: #FFF;
+  padding: 50px 70px;
+  border-radius: 100%;
+  position: relative;
+  left: -30px;
+  top: 75px;
+}
+.muntanya{
+width: 0;
+height: 0;
+border-left: 250px solid transparent;
+border-right: 250px solid transparent;
+border-bottom: 400px solid sandybrown;
+position: relative;
+top: -70px;
+
+}
+.muntanya2{
+width: 0;
+height: 0;
+border-left: 350px solid transparent;
+border-right: 350px solid transparent;
+border-bottom: 500px solid sienna;
+position: relative;
+top: -570px;
+left: 300px;
+}
+.muntanya3{
+width: 0;
+height: 0;
+border-left: 300px solid transparent;
+border-right: 300px solid transparent;
+border-bottom: 500px solid burlywood;
+position: relative;
+top: -1070px;
+left: 850px;
+
+}
+.muntanya4{
+width: 0;
+height: 0;
+border-left: 250px solid transparent;
+border-right: 250px solid transparent;
+border-bottom: 350px solid peru;
+position: relative;
+top: -1420px;
+left: 1200px;
+
+}
+
+.petal{
+  width: 100px;
+  height: 100px;
+  background-color: #FF3;
+  border-radius: 100px 0 100px 0;
+}
+.flor{
+  position: relative;
+  left: 0;
+  animation-name: flor;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  transform-origin: 0 100px;
+  margin-left: 600px;
+  z-index: 101;
+}
+
+.centre{
+  width: 50px;
+  height: 50px;
+  background-color: #F33;
+  border-radius: 25px;
+  position: relative;
+  top: -525px;
+  left: -25px;
+}
+
+.p2{
+  transform: translateY(-100px) rotate(60deg);
+  transform-origin: 0 100px;
+}
+.p3{
+  transform: translateY(-200px) rotate(120deg);
+  transform-origin: 0 100px;
+}
+.p4{
+  transform: translateY(-300px) rotate(180deg);
+  transform-origin: 0 100px;
+}
+.p5{
+  transform: translateY(-400px) rotate(240deg);
+  transform-origin: 0 100px;
+}
+.p6{
+  transform: translateY(-500px) rotate(300deg);
+  transform-origin: 0 100px;
+}
+@keyframes flor{
+  from{
+    transform: rotate(0deg);
+    transform-origin: 0 100px;
+  }
+  to{
+    transform: rotate(360deg);
+    transform-origin: 0 100px;
+  }
+}
+@keyframes nuvol {
+
+  0%{
+top: 0;
+left: 150px;
+  }
+  100%{
+top: 0;
+left: 700px;
+  }
+
+}
+@keyframes nuvol2 {
+
+  0%{
+top: -200px;
+left: 1400px;
+  }
+  100%{
+top: 0;
+left: 700px;
+  }
+
+}
+
+.pal{
+  height: 150px;
+  width: 20px;
+  background-color: green;
+  margin-top:-500px;
+  margin-left: 585px;
+  position: relative;
+  z-index: 100;
+}
+
+.ram {
+ position: absolute;
+ top: 880px;
+ left: 100px;
+}
+
+.petal2{
+  width: 100px;
+  height: 100px;
+  background-color: #FF3;
+  border-radius: 100px 0 100px 0;
+}
+.flor2{
+  position: relative;
+  left: 0;
+  animation-name: flor;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  transform-origin: 0 100px;
+  margin-left: 600px;
+  z-index: 101;
+}
+
+.centre2{
+  width: 50px;
+  height: 50px;
+  background-color: #F33;
+  border-radius: 25px;
+  position: relative;
+  top: -525px;
+  left: -25px;
+}
+
+.p2{
+  transform: translateY(-100px) rotate(60deg);
+  transform-origin: 0 100px;
+}
+.p3{
+  transform: translateY(-200px) rotate(120deg);
+  transform-origin: 0 100px;
+}
+.p4{
+  transform: translateY(-300px) rotate(180deg);
+  transform-origin: 0 100px;
+}
+.p5{
+  transform: translateY(-400px) rotate(240deg);
+  transform-origin: 0 100px;
+}
+.p6{
+  transform: translateY(-500px) rotate(300deg);
+  transform-origin: 0 100px;
+}
+@keyframes flor{
+  from{
+    transform: rotate(0deg);
+    transform-origin: 0 100px;
+  }
+  to{
+    transform: rotate(360deg);
+    transform-origin: 0 100px;
+  }
+}
+@keyframes nuvol {
+
+  0%{
+top: 0;
+left: 150px;
+  }
+  100%{
+top: 0;
+left: 700px;
+  }
+
+}
+@keyframes nuvol2 {
+
+  0%{
+top: -200px;
+left: 1400px;
+  }
+  100%{
+top: 0;
+left: 700px;
+  }
+
+}
+
+.pal2{
+  height: 150px;
+  width: 20px;
+  background-color: green;
+  margin-top:-500px;
+  margin-left: 585px;
+  position: relative;
+  z-index: 100;
+}
+
+.ram2 {
+ position: absolute;
+ top: 880px;
+ left: 1000px;
+}
+
+#hormiga{
+  position: relative;
+  animation-name: caminar;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 1000;
+  animation-direction:normal;
+  margin-top: -1400px;
+}
+
+@keyframes caminar{
+  0%{
+    top: 0;
+    right: 0;
+  }
+  50%{
+    top: 0px;
+    right: -600px;
+  }
+  100%{
+    top: 0px;
+    right: -1200px;
+  }
+}
+
+#bolaatras{
+  background-color: black;
+  height: 30px;
+  width: 40px;
+  border-radius: 50px 50px 50px 50px;
+}
+#boladelante{
+  background-color: black;
+  height: 20px;
+  width: 30px;
+  border-radius: 50px 50px 50px 50px;
+  margin-left: 40px;
+  margin-top: -25px;
+}
+#cabeza  {
+  background-color: black;
+  height: 40px;
+  width: 50px;
+  border-radius: 50px 50px 50px 50px;
+  margin-left: 70px;
+  margin-top: -30px;
+}
+#antena1{
+  background-color: black;
+  height: 5px;
+  width: 30px;
+  margin-left: 100px;
+  margin-top: -40px;
+  transform: rotate(-20deg);
+}
+#antena2{
+  background-color: black;
+  height: 5px;
+  width: 30px;
+  margin-left: 90px;
+  margin-top: -10px;
+  transform: rotate(-40deg);
+}
+#pata1{
+  background-color: black;
+  height: 5px;
+  width: 30px;
+  transform: rotate(-40deg);
+  margin-top: 40px;
+  position: relative;
+  animation-name: movi;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1000;
+  animation-direction:normal;
+}
+@keyframes movi{
+  0%{
+    top: 0;
+    right: 0;
+  }
+  100%{
+    transform: rotate(-80deg);
+    top: 0;
+    right: 0;
+  }
+}
+#pata2{
+  background-color: black;
+  height: 5px;
+  width: 30px;
+  transform: rotate(40deg);
+  margin-top: -10px;
+  margin-left: 60px;
+  position: relative;
+  animation-name: movi2;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1000;
+  animation-direction:normal;
+  }
+  @keyframes movi2{
+  0%{
+    top: 0;
+    right: 0;
+  }
+  100%{
+    transform: rotate(80deg);
+    top: 0;
+    right: 0;
+  }
+}
+</style>
+
+  </head>
+  <body>
+
+<div class="lluna"></div>
+  <div id="nuvol">
+  </div>
+  <div id="nuvol2">
+  </div>
+  <div class="muntanya"></div>
+  <div class="muntanya2"></div>
+  <div class="muntanya3"></div>
+  <div class="muntanya4"></div>
+  <div class="ram">
+        <div class="flor">
+          <div class="petal p1">
+          </div>
+          <div class="petal p2">
+          </div>
+          <div class="petal p3">
+          </div>
+          <div class="petal p4">
+          </div>
+          <div class="petal p5">
+          </div>
+          <div class="petal p6">
+          </div>
+          <div class="centre">
+          </div>
+        </div>
+        <div class="pal">
+        </div>
+  </div>
+  <div class="ram2">
+        <div class="flor2">
+          <div class="petal2 p1">
+          </div>
+          <div class="petal2 p2">
+          </div>
+          <div class="petal2 p3">
+          </div>
+          <div class="petal2 p4">
+          </div>
+          <div class="petal2 p5">
+          </div>
+          <div class="petal2 p6">
+          </div>
+          <div class="centre2">
+          </div>
+        </div>
+        <div class="pal2">
+        </div>
+  </div>
+
+  <div id="hormiga">
+    <div id="bolaatras"></div>
+    <div id="boladelante"></div>
+    <div id="cabeza"></div>
+    <div id="antena1"></div>
+    <div id="antena2"></div>
+    <div id="pata1"></div>
+    <div id="pata2"></div>
+  </div>
+
+
+
+
+  </body>
+</html>
