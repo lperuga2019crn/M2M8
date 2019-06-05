@@ -1,0 +1,47 @@
+<style>
+  .primari{
+    background-color: magenta;
+    width: 200px;
+    padding:0;
+  }
+
+  .secundari{
+    background-color: gold;
+    position: relative;
+    left: 200px;
+    top: -1.7em;
+    display: none;
+  }
+
+  .primari li{
+    background-color: orange;
+    display: block;
+    position: relative;
+  }
+
+  .primari li:hover > .secundari{
+    display:block;
+  }
+
+  h1{
+    font-size: 1em;
+  }
+
+  h3{
+    background-color: purple;
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+
+  li{
+    list-style-type: none;
+  }
+
+  .secundari li{
+    background-color: orange;
+    display: block;
+    position: relative;
+  }
+
+</style>
